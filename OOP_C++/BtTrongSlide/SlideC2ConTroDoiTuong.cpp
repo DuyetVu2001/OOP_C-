@@ -148,7 +148,7 @@ int main()
 		<< setw(15) << "MAJORS" 
 		<< "DIEM TK" << endl;
 	for (int i = 0; i < n; i++) {
-		(sv + i)->xuat();
+		(sv + i) -> xuat();
 	}
 	
 	double max = 0;
@@ -184,6 +184,6 @@ int main()
 		<< setw(15) << "MAJORS" 
 		<< "DIEM TK" << endl;
 	for (int i = 0; i < n + 1; i++) {
-		(sv + i)->xuat();
+		(sv + i) -> xuat();
 	}
 }

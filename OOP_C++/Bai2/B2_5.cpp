@@ -27,7 +27,11 @@ public:
 	}
 	
 	double giaTriXeHienTai() {
-		return giaMua - (giaMua * 1.0 * soNamSuDung * tyLeKhauHao / 100);
+		double giaHienTai = giaMua;
+		for (int i = 1; i <= soNamSuDung; i++) {
+			giaHienTai = giaHienTai - giaHienTai * tyLeKhauHao / 100;
+		}
+		return giaHienTai;
 	}
 	
 	void xuat() {

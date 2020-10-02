@@ -48,5 +48,4 @@ int main()
 	SapXep sx;
 	sx.nhap();
 	sx.xuat();
-	
 }
