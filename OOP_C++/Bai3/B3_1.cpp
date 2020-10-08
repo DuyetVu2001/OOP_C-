@@ -54,15 +54,27 @@ public:
 
 int main()
 {
-	NhanSu ns1;
+	NhanSu ns1[100];
+	int n;
 	
-	ns1.nhap();
+	cout << "Nhap vao so nhan su: ";
+	cin >> n;
+	cin.ignore();
 	
-	cout << "\n=================THONG TIN NHAN SU=================" << endl;
+	for (int i = 0; i < n; i++) {
+		cout << "==========================NHAN SU " << i + 1 << "===========================" << endl;
+		ns1[i].nhap();
+	}
+	
+	
+	cout << "\n=======================THONG TIN NHAN SU==========================" << endl;
 	cout << setw(15) << left << "ID"
 		<< setw(25) << left << "HO VA TEN"
 		<< "NAM SINH" << endl;
-	ns1.xuat();
+	for (int i = 0; i < n; i++) {
+		ns1[i].xuat();
+	}
+	
 }
 
 

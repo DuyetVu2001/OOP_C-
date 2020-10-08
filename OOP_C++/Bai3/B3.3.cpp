@@ -53,6 +53,7 @@ void Phieu::nhap() {
 	for(int i = 0; i < n; i++) {
 		cout << "MAT HANG " << i + 1 << endl;
 		x[i].nhap();
+		cout << endl;
 	}
 }
 
