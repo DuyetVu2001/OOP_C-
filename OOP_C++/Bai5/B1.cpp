@@ -9,8 +9,6 @@ protected:
 	string name;
 	string birthDay;
 	string queQuan;
-public:
-	void nhap();
 };
 
 class KySu : public Person
