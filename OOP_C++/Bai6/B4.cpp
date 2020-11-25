@@ -21,10 +21,10 @@ public:
 	}
 	friend ostream &operator << (ostream &os, TamThucBacHai &obj) {
 		if (obj.b < 0 && obj.c < 0) {
-			cout << obj.a << "x2" << obj.b << "x" << obj.c << endl;
+			os << obj.a << "x2" << obj.b << "x" << obj.c << endl;
 		}
 		else {
-			cout << obj.a << "x2+" << obj.b << "x+" << obj.c << endl;	
+			os << obj.a << "x2+" << obj.b << "x+" << obj.c << endl;	
 		}
 		return os;
 	}
